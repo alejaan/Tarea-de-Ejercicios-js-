@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio numero 7</title>
+</head>
+<body>
+
+    <h1>Calculando la nota</h1>
+
+    <label for="nota1">Ingrese nota1 y su ponderacion:</label>
+    <input id="nota1" type="number" min="0" max="10" step="0.5" pattern="[1-9](\.\d{1,2})?|10(\.0{1,2})?" placeholder="ingrese nota">
+    <input id="ponderacion1" type="number" min="0" max="100" step="1" pattern="[1-9](\.\d{1,2})?|[10-99](\.0{1,2})?|100(\.0{1,2})?" placeholder="ponteracion">%</br>
+    <label for="nota2">Ingrese nota2 y su ponderacion:</label>
+    <input id="nota2" type="number" min="0" max="10" step="0.5" pattern="[1-9](\.\d{1,2})?|10(\.0{1,2})?" placeholder="Ingrese nota de Examen">
+    <input id="ponderacion2" type="number" min="0" max="100" step="1" pattern="[1-9](\.\d{1,2})?|[10-99](\.0{1,2})?|100(\.0{1,2})?" placeholder="Ingrese nota de tareas">%</br>
+
+    <button onclick="calculanotafinal()">Calcular nota</button>
+
+    <h3 id="resultado"></h3>
+
+    <script src="./ejercicio 7.js"></script>
+</body>
+</html>
